@@ -7,8 +7,8 @@ const btnForm = document.getElementById('login-button');
 // FUNÇÕES DE VALIDAÇÃO
 function clicarBotao() {
   if (
-    emailInput.value === 'tryber@teste.com' &&
-    passwordInput.value === '123456'
+    emailInput.value === 'tryber@teste.com'
+    && passwordInput.value === '123456'
   ) {
     alert('Olá, Tryber!');
   }

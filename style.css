@@ -7,6 +7,8 @@ body {
 
 #evaluation-form {
   flex-direction: column;
+  padding: 0;
+  margin: 0;
 }
 
 #trybewarts-forms-logo {
@@ -66,5 +68,14 @@ label {
 #familias {
   display: flex;
   flex-flow: column nowrap;
-  align-self: flex-start;
+}
+
+#label-content {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+#section-meio {
+  display: flex;
+  justify-content: space-between;
 }

@@ -24,3 +24,11 @@ form {
 main {
   display: flex;
 }
+
+#nome-comppleto {
+  display: flex;
+}
+
+#email-casa-div {
+  display: flex;
+}

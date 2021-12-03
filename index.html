@@ -26,35 +26,77 @@
         <button id="login-button" type="submit">Entrar</button>
       </form>
     </header>
+    <!-- Essa section é para poder colocar o formulário e a imagem dentro de um container flex -->
+    <section class="flex-container">
+      <main>
+        <form id="evaluation-form">
+          <h2>Formulário de Avaliação</h2>
+          
+          <div class="flex-container">
+            <input id="input-name" type="text" name="name" placeholder="Nome" />
+            <input
+            id="input-lastname"
+            type="text"
+            name="lastname"
+            placeholder="Sobrenome"
+            />
+          </div>
+          <div class="flex-container">
+            <input id="input-email" type="text" name="email" placeholder="Email" />
+            <label for="house">Casa:
+              <select id="house">
+                <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+                <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+                <option id="corvinode-house" value="Corvinode">Corvinode</option>
+                <option id="pytherina-house" value="Pytherina">Pytherina</option>
+              </select>
+            </label>
+          </div>
 
-    <main>
-      <form id="evaluation-form">
+        <hr>
+
+        <section id="familias">
+          <label id="label-family">Qual a sua família?</label>
+          
+          <div class="flex-container">
+            <input 
+            type="radio" 
+          name="family" 
+          value="Frontend" 
+          id="frontend-family"
+          >
+          <label for="frontend-family">Família Fronted</label>
+        </div>
         
-        <div id="nome-completo">
-          <input id="input-name" type="text" name="name" placeholder="Nome" />
-          <input
-          id="input-lastname"
-          type="text"
-          name="lastname"
-          placeholder="Sobrenome"
-          />
+        <div class="flex-container">
+          <input 
+          type="radio" 
+          name="family" 
+          value="Backend" 
+          id="backend-family"
+          >
+          <label for="backend-family">Família Backend</label>
         </div>
-        <div id="email-casa-div">
-          <input id="input-email" type="text" name="email" placeholder="Email" />
-          <select id="house">
-            <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-            <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-            <option id="corvinode-house" value="Corvinode">Corvinode</option>
-            <option id="pytherina-house" value="Pytherina">Pytherina</option>
-          </select>
+        
+        <div class="flex-container">
+          <input 
+          type="radio" 
+          name="family" 
+          value="FullStack" 
+          id="fullstack-family"
+          >
+          <label for="fullstack-family">Família FullStack</label>
         </div>
+      </section>
+        
       </form>
-      <img
-      id="trybewarts-forms-logo"
-      src="images/trybewarts-colored.svg"
-      alt="Trybewarts forms logo"
-      />
     </main>
+    <img
+    id="trybewarts-forms-logo"
+    src="images/trybewarts-colored.svg"
+    alt="Trybewarts forms logo"
+    />
+  </section>
     <script src="script.js"></script>
   </body>
 </html>

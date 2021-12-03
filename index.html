@@ -30,31 +30,34 @@
     <section class="flex-container">
       <main>
         <form id="evaluation-form">
-          <h2>Formulário de Avaliação</h2>
-          
-          <div class="flex-container">
-            <input id="input-name" type="text" name="name" placeholder="Nome" />
-            <input
-            id="input-lastname"
-            type="text"
-            name="lastname"
-            placeholder="Sobrenome"
-            />
-          </div>
-          <div class="flex-container">
-            <input id="input-email" type="text" name="email" placeholder="Email" />
-            <label for="house">Casa:
-              <select id="house">
-                <option id="gitnoria-house" value="Gitnória">Gitnória</option>
-                <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
-                <option id="corvinode-house" value="Corvinode">Corvinode</option>
-                <option id="pytherina-house" value="Pytherina">Pytherina</option>
-              </select>
-            </label>
-          </div>
+          <section id="email-casa-container">
 
-        <hr>
-      <section id="section-meio">
+            <h2>Formulário de Avaliação</h2>
+            
+            <div class="flex-container">
+              <input id="input-name" type="text" name="name" placeholder="Nome" />
+              <input
+              id="input-lastname"
+              type="text"
+              name="lastname"
+              placeholder="Sobrenome"
+              />
+            </div>
+            <div class="flex-container">
+              <input id="input-email" type="text" name="email" placeholder="Email" />
+              <label for="house">Casa:
+                <select id="house">
+                  <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+                  <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+                  <option id="corvinode-house" value="Corvinode">Corvinode</option>
+                  <option id="pytherina-house" value="Pytherina">Pytherina</option>
+                </select>
+              </label>
+            </div>
+          </section>
+            
+    <hr>
+    <section id="section-meio">
 
         <section id="familias">
           <label id="label-family">Qual sua família?</label>
@@ -79,53 +82,56 @@
             <label for="backend-family">Família Backend</label>
           </div>
           
-        <div class="flex-container">
-          <input 
-          type="radio" 
-          name="family" 
-          value="FullStack" 
-          id="fullstack-family"
-          >
-          <label for="fullstack-family">Família FullStack</label>
+          <div class="flex-container">
+            <input 
+            type="radio" 
+            name="family" 
+            value="FullStack" 
+            id="fullstack-family"
+            >
+            <label for="fullstack-family">Família FullStack</label>
+          </div>
+        </section>
+      
+      <section id="webdev-content-container">
+
+        <label id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+        
+        <div id="webdev-content">
+          <div class="flex-container">
+            <input type="checkbox" id="hofs" value="HoFs">
+            <label for="hofs">HoFs</label>
+          </div>
+          
+          <div class="flex-container">
+            <input type="checkbox" id="jest" value="Jest">
+            <label for="jest">Jest</label>
+          </div>
+          
+          <div class="flex-container">
+            <input type="checkbox" id="promises" value="Promises">
+            <label for="promises">Promises</label>
+          </div>
+          
+          <div class="flex-container">
+            <input type="checkbox" id="react" value="React">
+            <label for="react">React</label>
+          </div>
+          
+          <div class="flex-container">
+            <input type="checkbox" id="sql" value="SQL">
+            <label for="sql">SQL</label>
+          </div>
+          
+          <div class="flex-container">
+            <input type="checkbox" id="python" value="Python">
+            <label for="python">Python</label>
+          </div>
         </div>
       </section>
-      
-      <label id="label-content">Qual conteúdo você está com mais vontade de aprender?
-        
-        
-        <div class="flex-container">
-          <input type="checkbox" id="hofs" value="HoFs">
-          <label for="hofs">HoFs</label>
-        </div>
-        
-        <div class="flex-container">
-          <input type="checkbox" id="jest" value="Jest">
-          <label for="jest">Jest</label>
-        </div>
-        
-        <div class="flex-container">
-          <input type="checkbox" id="promises" value="Promises">
-          <label for="promises">Promises</label>
-        </div>
-        
-        <div class="flex-container">
-          <input type="checkbox" id="react" value="React">
-          <label for="react">React</label>
-        </div>
-        
-        <div class="flex-container">
-          <input type="checkbox" id="sql" value="SQL">
-          <label for="sql">SQL</label>
-        </div>
-        
-        <div class="flex-container">
-          <input type="checkbox" id="python" value="Python">
-          <label for="python">Python</label>
-        </div>
-      </label>
     </section>
-      
-    </form>
+     <hr> 
+  </form>
   </main>
   <img
   id="trybewarts-forms-logo"

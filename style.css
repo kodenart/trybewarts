@@ -115,4 +115,18 @@ hr {
 #rate-container {
   display: flex;
   flex-flow: row nowrap;
+  justify-content: space-between;
+  width: 670px;
 }
+
+#text-area-container {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 670px;
+  margin-top: 20px;
+}
+
+textarea {
+  border-radius: 5px;
+}
+

@@ -112,4 +112,7 @@ hr {
   flex-flow: row wrap;
 }
 
-
+#rate-container {
+  display: flex;
+  flex-flow: row nowrap;
+}

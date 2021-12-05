@@ -30,7 +30,7 @@ body {
 
 header input {
   height: 5vh;
-  margin: 0 ;
+  margin: 0;
   border-radius: 6px;
 }
 
@@ -45,7 +45,7 @@ header button {
 
 .trybewarts-header-logo {
   margin: 0 1vw;
-  padding: .5vh .5vw;
+  padding: 0.5vh 0.5vw;
 }
 
 #trybewarts-header-title {
@@ -130,3 +130,25 @@ textarea {
   border-radius: 5px;
 }
 
+#checkbox-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  width: 670px;
+}
+
+#submit-btn {
+  background-color: rgb(65, 65, 102);
+  color: white;
+  height: 15px;
+  border-radius: 6px;
+  border-color: rgb(65, 65, 102);
+  width: 670px;
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  height: 30px;
+  color: white;
+}

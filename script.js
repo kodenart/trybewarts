@@ -6,7 +6,9 @@ const passwordInput = document.getElementById('password-input');
 const btnEnviarCredenciais = document.getElementById('login-button');
 const checkBoxAgreement = document.getElementById('agreement');
 const btnEnviarFormulario = document.getElementById('submit-btn');
-// btnEnviarFormulario.disable = true;
+const counterTextArea = document.getElementById('textarea');
+const counter = document.getElementById('counter');
+
 // FUNÇÕES DE EXECUÇÃO
 function enviarCredenciais() {
   if (
@@ -37,11 +39,19 @@ function enviarFormulario() {
     alert('Você precisa aceitar os termos de uso.');
   }
 }
+
+function contarCaracteres() {
+  const quantCaracteres = counterTextArea.value.length;
+  counter.value = 500 - parseInt(quantCaracteres, 10);
+  counter.innerHTML = counter.value;
+}
+
 // CAPTURA DE EVENTOS
 window.onload = () => {
   btnEnviarCredenciais.addEventListener('click', enviarCredenciais);
   checkBoxAgreement.addEventListener('click', selecionarCheckbox);
   btnEnviarFormulario.addEventListener('click', enviarFormulario);
+  counterTextArea.addEventListener('keyup', contarCaracteres);
 };
 
 // eslint-disable-next-line editorconfig/editorconfig

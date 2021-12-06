@@ -1,4 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
+  height: 100vh;
   display: flex;
   flex-flow: column nowrap;
   margin: 0;
@@ -7,12 +12,29 @@ body {
 
 #evaluation-form {
   flex-direction: column;
+  margin: 0 2vw;
 }
 
 #email-casa-container {
   display: flex;
   flex-flow: column;
   height: 25vh;
+  width: 670px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nome-casa {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+#input-name, #input-lastname, #input-email, #house {
+  flex-grow: 1;
+  margin-right: .5vw;
+  height: 5vh;
+  border-radius: 5px;
 }
 
 #trybewarts-forms-logo {
@@ -67,7 +89,6 @@ header button {
 .flex-container {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: center;
 }
 
 form {
@@ -110,6 +131,11 @@ hr {
 #webdev-content {
   display: flex;
   flex-flow: row wrap;
+  width: 250px;
+  height: 60px;
+  justify-content: space-between;
+  align-content: space-between;
+  align-self: center;
 }
 
 #rate-container {
@@ -130,6 +156,10 @@ textarea {
   border-radius: 5px;
 }
 
+#counter {
+  align-self: flex-end;
+}
+
 #checkbox-container {
   display: flex;
   flex-flow: row nowrap;
@@ -137,18 +167,30 @@ textarea {
   width: 670px;
 }
 
+#label-infos {
+  margin-right: 1vw;
+}
+
 #submit-btn {
   background-color: rgb(65, 65, 102);
   color: white;
-  height: 15px;
+  height: 5vh;
   border-radius: 6px;
   border-color: rgb(65, 65, 102);
   width: 670px;
 }
 
 footer {
-  background-color: black;
+  position: absolute;
+  top: 95vh;
+  margin-top: .6vh;
+  width: 100vw;
+  height: 4.4vh;
+  background-color: rgb(32, 32, 32);
   text-align: center;
-  height: 30px;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   height: 100vh;
   display: flex;
@@ -30,9 +31,9 @@ body {
   align-items: center;
 }
 
-#input-name, #input-lastname, #input-email, #house {
+#input-name , #input-lastname , #input-email , #house {
   flex-grow: 1;
-  margin-right: .5vw;
+  margin-right: 0.5vw;
   height: 5vh;
   border-radius: 5px;
 }
@@ -185,7 +186,7 @@ textarea {
 footer {
   position: absolute;
   top: 95vh;
-  margin-top: .6vh;
+  margin-top: 0.6vh;
   width: 100vw;
   height: 4.4vh;
   background-color: rgb(32, 32, 32);

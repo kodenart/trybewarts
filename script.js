@@ -88,9 +88,9 @@ function checkAllInputs() {
   return false;
 }
 
-function switchFirstPart() {
-  const theForm = document.getElementById('evaluation-form');
+const theForm = document.getElementById('evaluation-form');
 
+function switchFirstPart() {
   const newElemName = document.createElement('p');
   const name = document.querySelectorAll('section#email-casa-container input[type=text]');
   newElemName.innerText = `Nome: ${name[0].value} ${name[1].value}`;
@@ -109,8 +109,52 @@ function switchFirstPart() {
   theForm.removeChild(document.getElementsByTagName('hr')[0]);
 }
 
+function switchSecndPart() {
+  const hrElem = document.createElement('hr');
+  theForm.appendChild(hrElem);
+
+  const famValue = document.querySelector('input[name=family]:checked').value;
+  const newFamElem = document.createElement('p');
+  newFamElem.innerText = `Família: ${famValue}`;
+  theForm.appendChild(newFamElem);
+
+  const allCheckSubjs = document.querySelectorAll('input[class=subject]:checked');
+  const subjValuesArr = [];
+  for (let i = 0; i < allCheckSubjs.length; i += 1) {
+    subjValuesArr.push(allCheckSubjs[i].value);
+  }
+  const subjNewElem = document.createElement('p');
+  subjNewElem.innerText = `Matérias: ${subjValuesArr.join(', ')}`;
+  theForm.appendChild(subjNewElem);
+
+  theForm.removeChild(document.getElementById('section-meio'));
+}
+
+function switchThirdPart() {
+  theForm.removeChild(theForm.querySelector('hr'));
+  const hrElem = document.createElement('hr');
+  theForm.appendChild(hrElem);
+
+  const rateValue = theForm.querySelector('input[name=rate]:checked').value;
+  const newValueElem = document.createElement('p');
+  newValueElem.innerText = `Avaliação: ${rateValue}`;
+  theForm.appendChild(newValueElem);
+
+  const textAreaValue = document.querySelector('textarea').value;
+  const newComentElem = document.createElement('p');
+  newComentElem.innerText = `Observações: ${textAreaValue}`;
+  theForm.appendChild(newComentElem);
+  theForm.removeChild(document.getElementById('third-sec'));
+  const toMakeBox = document.getElementsByTagName('main')[0];
+  toMakeBox.style.border = 'solid purple 3px';
+  toMakeBox.style.margin = '2vh 3vw';
+  toMakeBox.style.alignItems = 'center';
+}
+
 function switchEverything() {
   switchFirstPart();
+  switchSecndPart();
+  switchThirdPart();
 }
 
 function submitForm(event) {

@@ -104,6 +104,8 @@ main {
 }
 
 hr {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
   width: 670px;
   color: rgb(163, 163, 163);
 }
@@ -131,7 +133,7 @@ hr {
 #webdev-content {
   display: flex;
   flex-flow: row wrap;
-  width: 250px;
+  width: 200px;
   height: 60px;
   justify-content: space-between;
   align-content: space-between;
@@ -194,3 +196,6 @@ footer {
   align-items: center;
 }
 
+p {
+  margin: 2vh 0;
+}
